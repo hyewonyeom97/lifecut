@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>므요의 인생네컷</title>
+    <!-- <a>: 하이퍼링크, 항상 "href"와 함께 쓰임-->
+    <!-- <img>: 이미지 삽입, 항상 "src"와 함께 쓰임-->
+    <!-- <input>: 무엇을 입력할 수 있는 란, "type"과 함께 쓰임 (i.e. text, password, etc.)-->
+    <!-- id: 단 하나마 존재하는 요소를 표현하기 위한 방법 -->
+    <!-- class: 비슷한 종류의 요소를 묶어놓는 방법 -->
+    <!-- CSS할 때 주의점!!! class는 .(클래스이름)이고 id는 #(아이디이름)임 -->
+    <style>
+        /* 이서윤체 폰트 적용을 위한 코드 */
+        @font-face {
+            font-family: "LeeSeoyun";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* body태그 자체에 css 요소 부여 */
+        body {
+            font-family: "LeeSeoyun";
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url("./background.png");
+        }
+
+        .bigbox {
+            width: 250px;
+            background-color: lightpink;
+            height: auto;
+        }
+
+        .photos {
+            margin-top: 20px;
+        }
+
+        .photoframe {
+            background-color: white;
+            margin: 20px 20px;
+            height: 150px;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .ft-title {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ft-date {
+            color: white;
+            font-size: 15px;
+            font-weight: lighter;
+        }
+
+        /* background-image: url('./')를 하면 파일로 들어와있는 사진 목록이 뜸 */
+        .photoframe {
+            background-size: contain;
+        }
+
+        #image1 {
+            background-image: url('./KakaoTalk_Photo_2023-02-08-22-08-15\ 001.jpeg');
+        }
+
+        #image2 {
+            background-image: url('./KakaoTalk_Photo_2023-02-08-22-08-15\ 002.jpeg');
+        }
+
+        #image3 {
+            background-image: url('./KakaoTalk_Photo_2023-02-08-22-08-15\ 003.jpeg');
+        }
+
+        #image4 {
+            background-image: url('./KakaoTalk_Photo_2023-02-08-22-08-15\ 004.jpeg');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="photos">
+            <div id="image1" class="photoframe" 사진 1>
+                <span id="desc1" class="photodescription">
+                    <!-- 하나 이미지 설명 -->
+                </span>
+            </div>
+            <div id="image2" class="photoframe" 사진 2>
+                <span id="desc1" class="photodescription">
+                    <!-- 둘 이미지 설명 -->
+                </span>
+            </div>
+            <div id="image3" class="photoframe" 사진 3>
+                <span id="desc1" class="photodescription">
+                    <!-- 셋 이미지 설명 -->
+                </span>
+            </div>
+            <div id="image4" class="photoframe" 사진 4>
+                <span id="desc1" class="photodescription">
+                    <!-- 넨 이미지 설명 -->
+                </span>
+            </div>
+            <!-- iframe: 동영상 넣을 때 활용 -->
+        </div>
+        <div class="footer">
+            <p class="ft-title">Happy Day Everyday</p>
+            <p class="ft-date">2023.02.08</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
